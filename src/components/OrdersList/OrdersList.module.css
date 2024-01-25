@@ -1,0 +1,47 @@
+.orderListHeader{
+    width: 100%;
+    padding: 1rem;
+    color: black;
+    font-family: 'Silkscreen', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+.orderBtnsBox{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 3rem;
+
+}
+
+.orderBtns{
+    width: 10rem;
+    height: 5rem;
+    font-size: 1rem;
+    font-family: 'Silkscreen', sans-serif;
+}
+
+.orderBtns:hover{
+    background-color: rgba(142, 142, 142, 0.39);
+    font-family: 'Silkscreen', sans-serif;
+
+}
+
+.backBtn{
+    background-color: transparent;
+    border: 0;
+}
+.backBtn:hover{
+    background-color: rgb(158, 155, 141);
+}
+
+@media (max-width: 768px) {
+    .orderBtnsBox {
+        grid-template-columns: 1fr ;
+        padding: 0;
+    }
+  }
+
+

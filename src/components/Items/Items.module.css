@@ -1,0 +1,143 @@
+.itemBody{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.itemBodySection{
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 15px;
+    
+}
+
+.itemCard{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    
+    
+}
+
+.itemCardInfo{
+    width: 100%;
+    border: solid 3px black;
+    color: black;
+    padding: 2.5px;
+    display: grid;
+    justify-items: center;
+    grid-gap: 0.1rem;
+    background-color: rgba(78, 76, 76, 0.493);
+    border-radius: 10px;
+    
+    
+}
+
+
+.itemImg{
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+.itemIcons{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3px;
+}
+
+.itemBtn{
+    width: 100%;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.377);
+    
+}
+.itemBtn:hover{
+    background-color: rgb(146, 138, 110);
+}
+
+
+.outOfStock {
+    position: relative;
+}
+
+.outOfStockOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    opacity: 0.9;
+    z-index: 1; 
+}
+  
+  .itemCardInfo.outOfStock::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 0; 
+  }
+
+  .addedToFavoritesMessage {
+    color: rgb(232, 232, 232); 
+    position: absolute;
+    background-color: rgb(51, 51, 52);
+    font-size: 20px;
+}
+
+.addedToOrderMessage{
+    color: rgb(232, 232, 232); 
+    position: absolute;
+    background-color: rgb(51, 51, 52);
+    font-size: 20px;
+
+  }
+
+.heart:hover{
+    color: red;
+    background-color: black;
+}
+.add:hover{
+    color: rgb(10, 249, 2);
+    background-color: black;
+
+}
+
+
+@media (max-width: 768px) {
+    .itemBodySection {
+      grid-template-columns: 1fr 1fr;
+      padding: 0;
+    }
+    
+    .itemCardInfo {
+        font-size: 12px;
+        width: 100%;
+        padding: 0;
+    }
+    .itemBody{
+        padding: 0;
+
+    }
+    
+}  
+  

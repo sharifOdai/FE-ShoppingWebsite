@@ -1,0 +1,63 @@
+.SearchBar{
+    margin: auto;
+    width: 90%;
+        
+    
+}
+
+.inputSection{
+    width: 100%;
+}
+.SearchBarInput{
+    text-align: center;
+    width: 100%;
+    height: 1.5rem;
+}
+.SearchBarInput::placeholder{
+  font-size: 19px;
+}
+
+.SearchResults{
+    width: auto;
+    z-index: 999;
+    position: absolute;
+    color: black;
+    background-color: rgb(233, 232, 234);
+    list-style-type: none;
+    
+}
+
+.SearchItems{
+    text-align: start;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 7fr;
+    border: solid 2px black;
+    
+}
+
+.SearchBarImgSection{
+    width: 100%;
+    
+}
+.SearchBarImg{
+    width: 150px;
+}
+
+
+@media (max-width: 950px) {
+    .SearchBar {
+      margin-top: 50px; 
+    }
+  
+    .SearchBarInput {
+      height: 2rem; 
+    }
+  
+    .SearchItems {
+      grid-template-columns: 1fr; 
+    }
+    .SearchBarImg {
+      max-width: 100%; 
+    }
+  }

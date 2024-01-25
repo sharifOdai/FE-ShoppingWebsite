@@ -1,0 +1,149 @@
+.itemBody{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+}
+
+.itemBodySection{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+    padding: 15px;
+    
+    
+}
+.header{
+    text-align: center;
+    font-size: 0.7rem;
+    text-decoration: underline;
+    width: 100%;
+    padding: 1rem;
+    color: black;
+}
+.itemCard{
+    width: 100%;
+    
+    display: flex;
+    
+    
+}
+
+.itemCardInfo{
+    width: 100%;
+    border: solid 3px black;
+    padding: 10px;
+    display: grid;
+    justify-items: center;
+    border-radius: 10px;
+    background-color: rgba(78, 76, 76, 0.493);
+    
+}
+
+.itemImg{
+    width: 100%;
+    padding-bottom: 20px;
+    
+    
+}
+
+.itemIcons{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.itemBtn{
+    width: 100%;
+    
+}
+
+.outOfStock {
+    position: relative;
+  }
+  
+  .outOfStockOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    opacity: 0.9;
+    z-index: 1; 
+  }
+  
+  .itemCardInfo.outOfStock::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 0; 
+  }
+
+  .backBtn{
+    background: transparent;
+    border: 0;
+}
+.backBtn:hover{
+    background-color: rgb(141, 138, 125);
+}
+.addBtn{
+    color: rgb(6, 237, 14);
+}
+.addBtn:hover{
+    color: black;
+    background-color: rgb(6, 237, 14);
+}
+.removeBtn{
+    color: red;
+}
+.removeBtn:hover{
+    color: black;
+    background-color: red;
+}
+
+.backContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+}
+
+.addedToOrderMessage{
+    color: rgb(232, 232, 232); 
+    position: absolute;
+    background-color: rgb(51, 51, 52);
+    font-size: 20px;
+
+  }
+
+@media (max-width: 768px) {
+    .itemBodySection {
+      grid-template-columns: 1fr 1fr;
+      padding: 0;
+    }
+    
+    .itemCardInfo {
+        font-size: 12px;
+        width: 100%;
+        padding: 0;
+    }
+    .itemBody{
+        padding: 0;
+
+    }
+    
+}  

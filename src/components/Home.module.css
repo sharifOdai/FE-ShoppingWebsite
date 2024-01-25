@@ -1,0 +1,55 @@
+.header{
+    width: 100%;
+    text-align: center;
+    padding-top : 1rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.headerSection{
+    width: 97%;
+    background-image: url("https://wallpaperaccess.com/full/2563067.jpg");
+    background-size: cover; 
+    height: 13rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    justify-items: flex-end;
+    align-items: flex-end;
+}
+
+.headerTitle{
+    font-size: 4rem;
+    padding-bottom: 5rem;
+}
+
+.footer{
+    width: 100%;
+    background-color: black;
+    display: grid;
+    justify-items: center;  
+}
+.footerText{
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    padding: 7px;
+}
+
+@media (max-width: 950px) {
+    .headerSection {
+      height: 15rem; 
+    }
+  
+    .headerTitle {
+      font-size: 2.5rem; 
+      padding-bottom: 0.5rem; 
+    }
+    .footer{
+      height: 100%;
+      width: 100%;
+    }
+  
+  
+  }
